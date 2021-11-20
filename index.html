@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+
+    .body {
+      background-color: hsl(217, 54%, 11%);
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .card {
+      background-color: hsl(216, 50%, 16%);
+      width: 350px;
+      border-radius: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+      margin-bottom: auto;
+      height: 600px;
+      box-shadow: 0 1px 100px hsl(215, 100%, 48%);
+    }
+
+    .card .img {
+      width: 275px;
+      border-radius: 5px;
+      /* display: block; */
+      margin-top: 20px;
+      margin-left: 10%;
+    }
+
+    .card h1 {
+      color: hsl(0, 0%, 100%);
+      font-weight: 1000;
+      margin-left: 20px;
+      margin-bottom: 40px;
+      transition: .2s;
+    }
+
+    .card h1:hover {
+      color: hsl(178, 100%, 50%);
+    }
+
+    .card p {
+      color: white;
+      opacity: 50%;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    .card .info {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid rgb(102, 102, 102);
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .card .info .h41 {
+      color: hsl(178, 100%, 50%);
+    }
+
+    .card .info .h4 {
+      margin-left: 100px;
+      color: hsl(0, 0%, 100%);
+      opacity: 60%;
+    }
+
+    .createdBy {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .createdBy img {
+      width: 35px;
+      height: 35px;
+      object-fit: cover;
+      margin-right: 10px;
+      margin-left: 20px;
+
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .createdBy .created {
+      color: white;
+      opacity: 50%;
+    }
+
+    .createdBy .pseudo {
+      color: white;
+    }
+
+
+    .attribution {
+      font-size: 13px;
+      text-align: center;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .attribution p {
+      color: white;
+    }
+
+    .attribution p a {
+      color: hsl(228, 100%, 78%);
+    }
+  </style>
+</head>
+
+<body class="body">
+  <div class="card">
+    <img src="./images/image-equilibrium.jpg" class="img" />
+    <h1>Equilibrium #3429</h1>
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+
+    <div class="info">
+      <h4 class="h41"><img src="images/icon-ethereum.svg" /> &nbsp; 0.041 ETH</h4>
+      <h4 class="h4"><img src="images/icon-clock.svg" /> &nbsp; 3 days left</h4>
+    </div>
+
+
+
+
+    <div class="createdBy">
+      <img src="images/image-avatar.png"/>
+      <h3 class="created">Creation of &nbsp;</h3>
+      <h3 class="pseudo"> FrostBreker</h3>
+    </div>
+
+
+
+  </div>
+
+
+
+  <div class="attribution">
+    <p>Coded by <a href="https://github.com/FrostBreker" target="_blank">FrostBreker</a>.</p>
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+
+  </div>
+</body>
+
+</html>
